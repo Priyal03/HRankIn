@@ -12,6 +12,9 @@ import java.util.Scanner;
  *  
  *  other way from discussions I got to know that.. I can just sort the array and find the difference between pairs.
  *  That will basically be the minimum among all once we traverse whole array.
+ *  
+ *  so, the brute force is always O(n2), but based on operation we can optimize till O(n) after finding repetition 
+ *  in calculations or subproblem in ordered way.
  */
 public class MinAbsoluteDiff {
 
@@ -19,6 +22,7 @@ public class MinAbsoluteDiff {
 
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
+		
 
 		int arr[] = new int[n];
 		int t = 0;
